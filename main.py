@@ -7,6 +7,5 @@ app_user_one.get_user_info()
 app_user_one.change_job_title("manager")
 app_user_one.get_user_info()
 
-
-new_postt = Post("On a secret message", app_user_one.name)
-new_postt.get_post_info()
+new_post = Post('Test', app_user_one.name)
+new_post.get_post_info()
