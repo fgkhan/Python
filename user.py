@@ -1,23 +1,17 @@
 class User:
-    def __init__(self,user_email, user_name, user_password, user_current_job_title):
+    def __init__(self, user_email, user_name, user_password, user_current_job_title):
         self.email = user_email
-        self.name =  user_name
+        self.name = user_name
         self.password = user_password
         self.current_job_title = user_current_job_title
-
 
     def change_password(self, new_password):
         self.password = new_password
 
-
     def change_job_title(self, new_job_title):
         self.current_job_title = new_job_title
 
-
     def get_user_info(self):
-        print(f"User" {self.name} currently work as a {self.current_job_title} You can contact them at {self.email})
+        print(f"User {self.name} currently work as a {self.current_job_title} You can contact them at {self.email}")
 
 
-
-app_user_one = User("fgkhan@hotmail.com","Nana", "pwd1", "DevOps Engineer")
-app_user_one
